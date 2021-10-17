@@ -7,7 +7,6 @@ body {
 }
 
 html {
-  height: 2000px;
   font-size: 18px;
 }
 
@@ -46,6 +45,22 @@ header .navbar-toggler{
   
 }
 
+ul.dropdown-menu a.one-color{
+  border-bottom: solid 1px #C51A1B;
+}
+
+ul.dropdown-menu a.two-color{
+  border-bottom: solid 1px #EE7202;
+}
+
+ul.dropdown-menu a.three-color{
+  border-bottom: solid 1px #009CC4;
+}
+
+ul.dropdown-menu a.four-color{
+  border-bottom: solid 1px #708B31;
+}
+
 @media (max-width: 991px) {
 
   header .navbar-toggler {
@@ -80,8 +95,22 @@ header .navbar-toggler{
     margin: auto 0;
   }
 
-  .top-banner .banner {
-    height: 1000px !important;
+  header ul li{
+    height: 100%!important;
+  }
+
+  header ul a{
+    line-height: 130px;
+    font-size: 1.7rem;
+    padding: 0 60px;
+  }
+
+  header li:hover{
+    background-color: rgb(32, 32, 32)!important;
+  }
+
+  header li a:hover{
+    color: white!important;
   }
 
   header .container-xl.big {
@@ -96,9 +125,63 @@ header .navbar-toggler{
     color: white;
   }
 
-  header nav .dropdown-menu {
-    position: absolute;
+  header ul.navbar-nav{
+    background-color: black;
   }
+
+  header ul.dropdown-menu{
+    background-color: black;
+  }
+
+  header ul.dropdown-menu a{
+    border-bottom: 3px!important;
+  }
+
+  ul.dropdown-menu a.one-color{
+    border-bottom: solid 2px #C51A1B!important;
+  }
+  
+  ul.dropdown-menu a.two-color{
+    border-bottom: solid 2px #EE7202!important;
+  }
+  
+  ul.dropdown-menu a.three-color{
+    border-bottom: solid 2px #009CC4!important;
+  }
+  
+  ul.dropdown-menu a.four-color{
+    border-bottom: solid 2px #708B31!important;
+  }
+
+  header .dropdown-menu a.dropdown-item{
+    line-height: 130px;
+    padding: 0 90px;
+    font-size: 1.7rem;
+    height: 100%;
+  }
+
+  .top-banner .banner {
+    height: 85vh !important;
+  }
+
+  .top-banner p{
+    font-size: 4.5rem!important;
+    width: 90%;
+  }
+
+  .top-banner .btn{
+    font-size: 2.5rem!important;
+    width: 100%;
+  }
+
+  .top-banner .gradient{
+    background-color: rgba(255, 255, 255, 0.425)!important;
+  }
+
+  .care h2{
+    font-size: 2.5rem!important;
+  }
+
 }
 
 header .navbar.brand {
@@ -127,7 +210,7 @@ header .logo img {
   align-content: center;
 }
 
-header ul li {
+header ul.navabr li {
   list-style-type: none;
   margin: 0;
   height: 64px;
@@ -157,8 +240,11 @@ header a:hover {
 header li:hover {
   background-color: #f1f1f1;
 }
+header .dropdown-menu a{
+  border-bottom: 1px;
+}
 
-header .dropdown-menu {
+header ul.dropdown-menu {
   width: 100%;
 }
 
@@ -166,6 +252,7 @@ header .dropdown-menu {
   padding: 0;
   margin: 0;
   border: none;
+  border-radius: 0;
 }
 
 header .dropdown-item {
@@ -202,11 +289,13 @@ main .top-banner .gradient {
   text-align: left;
   margin: 0;
   font-size: 2.5rem;
-  display: flex;
-  flex-direction: column;
 }
 
-.top-banner .btn {
+.top-banner p:nth-child(2){
+  padding-bottom: 10%;
+}
+
+.top-banner .btn{
   border: 2px solid black;
   border-color: black;
   color: black;
