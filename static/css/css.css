@@ -20,10 +20,26 @@ header {
   padding: 40px 0 0 0;
 }
 
-.container.big {
-  height: 100%;
-  width: 1550px;
+.container-big, .container-small{
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-right: auto;
+  margin-left: auto;
 }
+
+@media (min-width: 1200px){
+  .container-small {
+      max-width: 1100px;
+  }
+}
+
+@media (min-width: 1200px){
+.container-big {
+    max-width: 1550px;
+}
+}
+
 
 header nav.navbar {
   width: unset !important;
@@ -182,6 +198,17 @@ ul.dropdown-menu a.four-color{
     font-size: 2.5rem!important;
   }
 
+  .care::before{
+    height: 70,3%!important;
+  }
+  
+  .care .box{
+    height: 540px!important;
+  }
+
+  .care .box img{
+    width: 270px!important;
+  }
 }
 
 header .navbar.brand {
@@ -266,7 +293,7 @@ main .top-banner {
 }
 
 main .top-banner .banner {
-  background-image: url("../static/img/bg-top.jpg");
+  background-image: url("../img/bg-top.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -317,6 +344,7 @@ main .top-banner .gradient {
 
 .care {
   position: relative;
+  height: 100%;
 }
 
 .care::before {
@@ -361,13 +389,13 @@ main .top-banner .gradient {
 }
 
 .care .box.first {
-  background-image: url("../static/img/leather-care.jpg");
+  background-image: url("../img/leather-care.jpg");
   min-height: 350px;
   border-bottom: 7px solid #ee7202;
 }
 
 .care .box.second {
-  background-image: url("../static/img/health-care.jpg");
+  background-image: url("../img/health-care.jpg");
   min-height: 480px;
   border-bottom: 7px solid #009cc4;
 }
@@ -378,13 +406,13 @@ main .top-banner .gradient {
 }
 
 .care .box.third {
-  background-image: url("../static/img/coat-care.jpg");
+  background-image: url("../img/coat-care.jpg");
   min-height: 480px;
   border-bottom: 7px solid #708b31;
 }
 
 .care .box.fouth {
-  background-image: url("../static/img/hoof-care.jpg");
+  background-image: url("../img/hoof-care.jpg");
   min-height: 350px;
   border-bottom: 7px solid #c51a1b;
 }
@@ -413,4 +441,9 @@ main .top-banner .gradient {
 
 .box a:hover img {
   width: 225px;
+}
+
+section.wrapper{
+  position: relative;
+  min-height: 100%;
 }
