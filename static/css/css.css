@@ -447,3 +447,30 @@ section.wrapper{
   position: relative;
   min-height: 100%;
 }
+
+footer{
+  padding: 50px 50px;
+  position: relative;
+  height: 500px;
+  width: 100%;
+  background-color: black;
+}
+
+footer img{
+  width: 32px;
+}
+
+footer .logos{
+  bottom: 0;
+}
+
+footer a{
+  text-decoration: none;
+  color: white;
+}
+
+footer p{
+  color: white;
+  font-size: 1.8rem;
+}
+

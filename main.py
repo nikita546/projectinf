@@ -6,16 +6,30 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///main.db'
 db = SQLAlchemy(app)
 
 
-class Products(db.Model):
-    id = db.Column(db.Integer, primary_key=True) 
-    name = db.Column(db.String(50), primary_key=True)
-    discription
-
-
 @app.route('/')
 @app.route('/home')
 def index():
-    return "Hello world"
+    return render_template('index.html')
+
+@app.route('/products')
+def products():
+    return render_template('products.html')
+
+@app.route('/history')
+def history():
+    return render_template('history.html')
+
+@app.route('/explore')
+def explore():
+    return render_template('explore.html')
+
+@app.route('/shops')
+def shops():
+    return render_template('shops.html')
+
+@app.route('/kontakts')
+def kontakts():
+    return render_template('kontakts.html')
 
 
 if __name__ == "__main__":

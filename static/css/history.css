@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+.history{
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.container:before {
+    content: "";
+    display: block;
+    background: #f1f1f1;
+    height: 40%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    float: center;
+}
+
+p.article{
+    font-size: 2.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 50px 50px 0;
+}
+
+p.year{
+    font-size: 1.7rem!important;
+    color: #ee7203;
+    margin-top: 0;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.history img{
+    height: 300px;
+}
+
+.right{
+    text-align: left;
+}
+
+.left{
+    text-align: right;
+}
+
+h3{
+    font-size: 1.5rem!important;
+    padding-bottom: 20px;
+    margin-bottom: 0!important;
+}
+
+h2{
+    font-size: 1.8rem!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    text-align: center; 
+}
+
+.container .block{
+    padding: 50px;
+    height: 100%;
+}
+
+.line{
+    border-right: 1px solid black;
+}
+
+.img{
+    display: flex;
+    align-items: center;
+    height: 500px;
+}
+
+.img.left{
+    justify-content: right;
+}
+
+.img.right{
+    justify-content: left;
+}
+
+.blockarea .row{
+    height: 500px;
+}
+
+.blockarea p{
+    font-size: 0.9rem;
+}
