@@ -4,16 +4,20 @@
     font-family: 'Raleway', sans-serif;
 }
 
-
-.container:before {
-    content: "";
-    display: block;
-    background: #f1f1f1;
-    height: 40%;
-    width: 100%;
-    z-index: -1;
+.history::before{
+    content: '';
     position: absolute;
-    float: center;
+    display: block;
+    width: 100%;
+    height: 30%;
+    z-index: -1;
+    background-color: #f1f1f1;
+}
+
+.blockarea:nth-child(2n){
+    background: #f1f1f1;
+    height: 100%;
+    width: 100%;
 }
 
 p.article{
@@ -32,8 +36,34 @@ p.year{
     position: relative;
 }
 
+.left p.year::before{
+    display: block;
+    position: absolute;
+    content: '';
+    width: 50px;
+    background: #ee7203;
+    height: 1px;
+    display: inline-block;
+    top: 24px;
+    left: inherit;
+    right: -75px;
+}
+
+.right p.year::before{
+    display: block;
+    position: absolute;
+    content: '';
+    width: 50px;
+    background: #ee7203;
+    height: 1px;
+    display: inline-block;
+    top: 24px;
+    right: inherit;
+    left: -75px;
+}
+
 .history img{
-    height: 300px;
+    width: 100%;
 }
 
 .right{
@@ -60,9 +90,12 @@ h2{
     text-align: center; 
 }
 
-.container .block{
+p{
+    font-size: 1rem!important;
+}
+
+.container-small .block{
     padding: 50px;
-    height: 100%;
 }
 
 .line{
@@ -72,7 +105,48 @@ h2{
 .img{
     display: flex;
     align-items: center;
-    height: 500px;
+}
+
+@media (max-width: 991px){
+    .img{
+        justify-content: center!important;
+    }
+
+    h3{
+        font-size: 2.5rem!important;
+    }
+
+    h2{
+        font-size: 2.6rem!important;
+    }
+
+    p.year{
+        font-size: 2.3rem!important;
+    }
+
+    p{
+        font-size: 1.8rem!important;
+    }
+
+    .blockarea{
+        max-height: 2000px!important;
+        min-height: 800px!important;
+        align-items: center;
+        display: flex;
+    }
+
+    .line{
+        border: 0;
+    }
+
+    .left p.year::before,.right p.year::before{
+        display: none;
+    }
+
+    .img{
+        display: none;
+    }
+
 }
 
 .img.left{
@@ -84,7 +158,12 @@ h2{
 }
 
 .blockarea .row{
-    height: 500px;
+    height: 100%;
+}
+
+.block{
+    min-height: 500px;
+    max-height: 800px;
 }
 
 .blockarea p{
