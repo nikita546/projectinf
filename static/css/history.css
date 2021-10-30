@@ -33,33 +33,30 @@ p.year{
     color: #ee7203;
     margin-top: 0;
     padding-bottom: 20px;
-    position: relative;
 }
 
 .left p.year::before{
-    display: block;
-    position: absolute;
+    position: relative;
     content: '';
     width: 50px;
     background: #ee7203;
     height: 1px;
     display: inline-block;
-    top: 24px;
+    top: -9px;
     left: inherit;
-    right: -75px;
+    right: -141px;
 }
 
-.right p.year::before{
-    display: block;
-    position: absolute;
+.right p.year::after{
     content: '';
     width: 50px;
     background: #ee7203;
     height: 1px;
     display: inline-block;
-    top: 24px;
+    top: -9px;
     right: inherit;
-    left: -75px;
+    left: -141px;
+    position: relative;
 }
 
 .history img{

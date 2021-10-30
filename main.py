@@ -11,9 +11,13 @@ db = SQLAlchemy(app)
 def index():
     return render_template('index.html')
 
-@app.route('/products')
+@app.route('/products-hoof')
 def products():
-    return render_template('products.html')
+    return render_template('products-hoof.html')
+
+@app.route('/product-example')
+def productExample():
+    return render_template('product-example.html')
 
 @app.route('/history')
 def history():
