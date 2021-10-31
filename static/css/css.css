@@ -450,19 +450,23 @@ section.wrapper{
 }
 
 footer{
-  padding: 50px 50px;
+  padding: 30px 50px;
   position: relative;
-  height: 500px;
   width: 100%;
   background-color: black;
 }
 
 footer img{
-  width: 32px;
+  height: 32px;
+  width: 32px!important;
+  padding: 0!important;
+  margin: 0 10px;
 }
 
-footer .logos{
-  bottom: 0;
+.flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 footer a{
@@ -475,3 +479,101 @@ footer p{
   font-size: 1.8rem;
 }
 
+footer h3{
+  font-size: 1.2rem;
+  color: white;
+}
+
+footer li{
+  color: white;
+  font-size: .9rem;
+  list-style-type: none;
+}
+
+footer span{
+  display: inline-block;
+  width: 8px;
+  height: 13px;
+  margin-right: 5px;
+}
+
+.leather{
+  background-color: #EE7202;
+}
+
+.hoof{
+  background-color: #C51A1B;
+}
+
+.coat{
+  background-color: #708B31;
+}
+
+.health{
+  background-color: #009CC4;
+}
+
+footer ul{
+  padding: 0;
+  margin: 0;
+}
+
+
+footer h1{
+  font-size: 1.2rem;
+  color: white;
+  margin: 0;
+}
+
+footer .content{
+  padding-left: 50px;
+}
+
+footer span.vk{
+  background-image: url('../img/vk.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 32px;
+  height: 32px;
+}
+
+footer span.instagram{
+  background-image: url('../img/instagram.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 32px;
+  height: 32px;
+}
+
+@media (min-width:991px){
+  footer .down{
+    display: none!important;
+  }
+}
+
+@media (max-width: 991px){
+  footer .up{
+    display: none!important;
+  }
+
+  .content{
+    padding: 25px 0!important;
+  }
+
+  footer h1{
+    font-size: 2.1rem;
+  }
+
+  footer li{
+    font-size: 1.3rem;
+  }
+
+  footer h3{
+    font-size: 1.7rem;
+  }
+
+  footer span.vk,footer span.instagram{
+    width: 54px;
+    height: 54px;
+  }
+}

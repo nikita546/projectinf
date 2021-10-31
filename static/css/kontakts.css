@@ -2,17 +2,17 @@
     padding: 50px 0;
 }
     
-p{
+.kontakts p{
     font-size: .9rem;
 }
 
-h3{
-    font-size: 1.5rem!important;
+.kontakts h3{
+    font-size: 1.5rem;
 }
 
 h3.article{
     padding-bottom: 30px;
-    font-size: 1.9rem!important;
+    font-size: 1.9rem;
     font-weight: 700;
 }
 
@@ -103,16 +103,23 @@ a.button:hover{
     height: 30vh;
 }
 
-@media (max-width:791px){
-    h3{
-        font-size: 2.8rem!important;
+@media (max-width: 991px){
+    .right{
+        float: left;
+        width: 100%;
+    }
+}
+
+@media (min-width:375px) and (max-width:891px){
+    .kontakts h3{
+        font-size: 2.8rem;
     }
 
     h3.article{
         font-size: 3.5rem!important;
     }
 
-    p{
+    .kontakts p{
         font-size: 2rem!important;
     }
 

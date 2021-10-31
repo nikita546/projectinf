@@ -2,7 +2,7 @@
     width:80%;
 }
 
-@media (max-width:791px){
+@media (max-width:991px){
     .product-item h1{
         font-size: 3rem!important;
     }
@@ -14,6 +14,11 @@
     .product-item p{
         font-size: 1.6rem!important;
     }
+
+    a.back{
+        font-size: 2.3rem!important;
+        padding: 0!important;
+    }
 }
 
 .image-block{
@@ -24,7 +29,7 @@
 a.back{
     text-decoration: none;
     color: black;
-    font-size: 1.4rem!important;
+    font-size: 1.4rem;
     padding-left: 50px;
 }
 
@@ -40,16 +45,16 @@ a.back:hover{
     padding: 100px 0;
 }
 
-h1{
-    font-size: 2rem!important;
+.product-item h1{
+    font-size: 2rem;
 }
 
-h3{
-    font-size: 1.2rem!important;
+.product-item h3{
+    font-size: 1.2rem;
     padding-top: 20px;
 }
 
-p{
-    font-size: .9rem!important;
+.product-item p{
+    font-size: .9rem;
 }
 
