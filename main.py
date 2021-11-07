@@ -24,10 +24,24 @@ def index():
     return render_template('index.html')
 
 @app.route('/products/leather')
-def products():
+def productsleather():
     productitem = ProductItem.query.all()
     return render_template('products-leather.html', productitem=productitem)
 
+@app.route('/products/coat')
+def productscoat():
+    productitem = ProductItem.query.all()
+    return render_template('products-coat.html', productitem=productitem)
+
+@app.route('/products/hoof')
+def productshoof():
+    productitem = ProductItem.query.all()
+    return render_template('products-hoof.html', productitem=productitem)
+
+@app.route('/products/health')
+def productshealth():
+    productitem = ProductItem.query.all()
+    return render_template('products-health.html', productitem=productitem)
 
 @app.route('/products/<string:Type>/<string:id>')
 def product_card(Type,id):

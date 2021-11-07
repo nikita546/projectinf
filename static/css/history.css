@@ -136,7 +136,7 @@ p{
         border: 0;
     }
 
-    .left p.year::before,.right p.year::before{
+    .left p.year::before,.right p.year::after{
         display: none;
     }
 

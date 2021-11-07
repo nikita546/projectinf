@@ -14,7 +14,7 @@
         <div class="container-big pt-100">
             <div class="row">
                 <div class="col-lg-6 col-md-12">
-                    <a href="" class="back">Назад</a>
+                    <a href="/products/{{ productitem.Type }}" class="back">Назад</a>
                     <div class="image-block">
                         <img src="{{ url_for('static', filename='../static/img/')}}{{productitem.id}}.png" alt="">
                     </div>
@@ -28,6 +28,7 @@
                     <h3>Application</h3>
                     <p>{{ productitem.application }}</p>
                     <h3>Size: {{ productitem.size }}</h3>
+                    <p class="next"><a class="button" href="/shops">Где купить</a></p>
                 </div>
             </div>
         </div>

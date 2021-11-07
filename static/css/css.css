@@ -272,6 +272,11 @@ header .dropdown-menu a{
   border-bottom: 1px;
 }
 
+header .dropdown-menu a:active{
+  background-color: #f1f1f1;
+  color: black;
+}
+
 header ul.dropdown-menu {
   width: 100%;
 }
@@ -474,6 +479,10 @@ footer a{
   color: white;
 }
 
+footer a:hover{
+  color: white;
+}
+
 footer p{
   color: white;
   font-size: 1.8rem;
@@ -576,4 +585,10 @@ footer span.instagram{
     width: 54px;
     height: 54px;
   }
+}
+
+h3.article{
+  padding-bottom: 30px;
+  font-size: 1.9rem;
+  font-weight: 700;
 }
