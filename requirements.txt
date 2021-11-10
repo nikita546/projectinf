@@ -65,6 +65,7 @@ toml==0.10.2
 tomlkit==0.7.0
 urllib3==1.26.2
 vistir==0.5.2
+waitress==2.0.0
 Werkzeug==0.16.0
 whichcraft==0.6.1
 wrapt==1.12.1

@@ -1,1 +1,1 @@
-worker: python main.py runserver
+web: waitress-serve --port=$PORT website:app
